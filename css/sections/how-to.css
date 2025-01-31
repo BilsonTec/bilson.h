@@ -1,0 +1,76 @@
+.center__div{
+    width: 80%;
+    margin: 4rem  auto 0;
+    font-family: var(--inter);
+}
+
+.lib__c{
+    margin-bottom: 1rem;
+}
+
+hr{
+    color: var(--gray);
+
+    filter: drop-shadow(1px 1px 10px var(--gray));
+}
+
+.pre-lib-c{
+    border: 1px solid var(--gray);
+    border-radius: 0 0 10px 10px;
+    padding: 2rem;
+    background-color: var(--opacity);
+    overflow: auto;
+    position: relative;
+
+    font-family: var(--code);
+    margin-bottom: 1rem;
+    font-weight: 500;
+
+    cursor: copy;
+}
+
+.pre-lib-c::after {
+    content: '';
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    height: 50px;
+    background: linear-gradient(to bottom, rgba(255, 255, 255, 0), rgba(255, 255, 255, 1));
+    pointer-events: none;
+}
+
+.back_ground{
+    background-color: var(--blue-color);
+    border-radius: 10px 10px 0 0;
+    padding: 10px;
+    font-size: 1.2rem;
+    color: var(--secondary-color);
+}
+
+.purple{
+    color: purple;
+}
+
+.orange{
+    color: rgb(167, 90, 19);
+}
+
+.blue{
+    color: rgb(77, 77, 199);
+}
+
+.green{
+    color: rgba(104, 155, 28, 0.7);
+    font-weight: 400;
+}
+
+.italic-eqnd{
+    font-style: italic;
+    font-family: var(--code);
+    font-weight: 600;
+
+    background-color: var(--gray);
+    padding: 5px;
+    border-radius: 2px;
+}

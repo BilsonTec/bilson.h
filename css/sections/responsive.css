@@ -1,0 +1,206 @@
+
+
+@media screen and (max-width: 1012px) {
+    .header__logo{
+        margin-left: 1em;
+    }
+        .header__menu ul{
+            margin-right: 1em;
+        }
+}
+
+@media screen and (max-width: 950px) {
+    .header__menu-mobile{
+        display: block;
+        margin-right: 2em;
+    }
+
+    
+    .header__menu{
+        display: none;
+    }
+
+    .burger-menu{
+        display: block;
+    }
+
+    .library{
+        flex-direction: column;
+        width: fit-content;
+    }
+
+    .table{
+        margin-left: 3.4em;
+
+    }
+
+    .header__menu-mobile{
+        margin-top: 2em;
+    }
+
+    .table-function{
+        width: 100%;
+    }
+
+    .aside-add{
+        align-self: center;
+        width: 80%;
+        margin-left: 6.8em;
+    }
+
+    .container-footer{
+        width: 100%;
+    }
+    .global-foot{
+        width: 60%;
+    }
+
+    input::-webkit-input-placeholder{
+        font-size: 0.8rem;
+
+    }
+
+}
+
+@media screen and (max-width: 539px) {
+    .global-foot{
+        text-align: center;
+    }
+}
+@media screen and (max-width: 708px ) {
+    .table-function {
+        padding: 0 10px;
+    }
+    
+    .table-function table {
+        font-size: 12px;
+        display: block;
+        overflow-x: auto;
+        white-space: nowrap;
+    }
+    
+    .table-function th, 
+    .table-function td {
+        padding: 6px;
+    }
+    
+        .table-function th:first-child, 
+        .table-function td:first-child {
+        width: 40%;
+    }
+    
+        .table-function th:last-child, 
+        .table-function td:last-child {
+        width: 60%;
+    }
+
+    .fetch{
+        flex-direction: column;
+        width: 100%;
+        align-items: center;
+    }
+
+    .video{
+        margin: 0 5em 5em 0;
+        width: 75%;
+    }
+
+    .fetch-download{
+        margin-left: 5em;
+        width: 60%;
+    }
+    
+    .rigth{
+        justify-content: center;
+        width: 100%;
+        align-items: center;
+    }
+
+    .info-installation{
+        margin-left: 5em;
+        width: 60%;
+    }
+}
+
+@media screen and (max-width: 350px) {
+    .download-file{
+        text-align: center;
+    }
+}
+
+
+@media (max-width: 681px) {
+    .table-function {
+        padding: 0 5px; 
+        overflow-x: auto; 
+    }
+
+    .table-function table {
+        display: block;
+        width: 100%; 
+        overflow-x: auto; 
+        white-space: nowrap; 
+    }
+
+    .table-function th, 
+    .table-function td {
+        padding: 5px;
+        font-size: 11px; 
+    }
+
+    .table-function pre {
+        font-size: 10px; 
+    }
+}
+
+@media screen and (max-width: 675px) {
+    .include{
+        display: none;
+    }
+}
+
+@media screen  and (max-width: 729px){
+    .container-footer{
+        flex-direction: column;
+        align-items: center;
+    }
+
+}
+
+@media screen and (max-width: 480px){
+
+    .library{
+        width: 100%;
+    }
+
+    .table{
+        width: 90%;
+        margin-left: 6%;
+        overflow-x: auto;
+        
+    }
+    .table-function{
+        width: fit-content;
+        
+    }
+
+    .aside-add{
+        width: fit-content;
+    }
+}
+
+@media screen and (max-width: 908px){
+    .fetch-download{
+        margin-right:4em ;
+    }
+
+    .info-installation{
+        margin-right: 4em;
+    }
+
+    .video iframe{
+        width: 100%;
+        margin-left: 3em;
+    }
+}
+

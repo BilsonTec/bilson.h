@@ -1,0 +1,486 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../css/style.css">
+    <link rel="shortcut icon" href="../public/image-removebg-preview.png" type="image-icon">
+    <title>How-to bilson.h</title>
+</head>
+<body>
+    <header> <!--navbar-->
+        <nav class="header__nav">
+            <div class="header__logo">Mylib.<span>C</span></div>
+            <h2 class="include">#Include <span class="animated-text">&lt;bilson.h&gt;</span>
+            </h2>
+            <div class="header__menu">
+                <ul>
+                    <li><a href="../homepage.html">Homepage</a></li>
+                    <li><a href="fetch.html">Fetch</a></li>
+                    <li><a href="how-to.html">How-To</a></li>
+                </ul>
+            </div>
+            <div class="header__menu-mobile">
+                <img src="../assets/menu.svg" alt="menu mobile">
+            </div>
+        </nav>
+        <div class="burger-menu">
+            <ul>
+                <li><a href="../homepage.html">Homepage</a></li>
+                <li><a href="fetch.html">Fetch</a></li>
+                <li><a href="how-to.html">How-To</a></li>
+            </ul>
+        </div>
+    </header><!--navbar-->
+    <main>
+        <div class="center__div">
+            <h1 class="lib__c">C library-bilson.h</h1>
+            <hr>
+            <br>
+            <p>
+                The bilson.h library is a collection of algorithmic functions designed to simplify the resolution of 
+                common programming problems. This library offers a variety of basic algorithms that can be easily integrated into your C projects,
+                allowing you to focus on the specific logic of your application rather than on the implementation of underlying algorithms.
+            </p>
+            <br>
+            <h4 class="back_ground">Syntax:</h4>
+            <pre class="pre-lib-c"><span class="purple">#Include</span> <span class="orange">&lt;bilson.h&gt;</span></pre>
+        <div class="function__librairy">
+            <h2 data-aos="fade-rigth">bilson.h Library Functions</h2>
+            <br>
+            <h3>avecal</h3>
+            <br>
+            <p>The avecal function is designed to calculate the average of multiple grades. This function takes an array of 
+                grades and the number of grades as input parameters and returns the average of these grades.
+            </p>
+            <br>
+            <p class="back_ground"><strong>Example:</strong></p>
+            <pre class="pre-lib-c">
+<span class="purple">#include</span> <span class="orange">&lt;stdio.h&gt;</span>
+<span class="purple">#include</span> <span class="orange">&lt;bilson.h&gt;</span>
+
+<span class="blue">int</span> <span class="orange">main()</span>{
+
+    <span class="green">// Declaration of an array containing student grades.</span>
+    <span class="blue">int</span> notes[ ] = {10, 15, 20, 12, 18};
+    <span class="blue">int</span> number_note = 5;
+                
+    <span class="green">// Calculating the average by calling the 'avecal' function from your library.</span>
+    <span class="blue">double</span> average = <span class="orange">avecal</span>(notes, number_note);
+
+    <span class="green">// Display the calculated average using %g format specifier.</span>
+    <span class="green">// %g: Automatically selects the most compact format (either floating-point or scientific notation)</span>
+    <span class="green">// for displaying the number, depending on the value. It will use 6 digits of precision by default.</span>
+    <span class="orange">printf</span>("The average of the grades is: %g\n", average);
+    
+    <span class="orange">return</span> 0;
+}
+            </pre>
+            <p class="back_ground"><strong>Output</strong></p>
+            <pre class="pre-lib-c">
+The average of the grades is: 15.00
+            </pre>
+
+            <h3>time</h3>
+            <p>The time function is designed to convert a given number of seconds into hours, minutes, and seconds. This function takes an integer
+                representing the total number of seconds and three pointers to integers where the hours, minutes and seconds will be stored.
+            </p>
+            <br>
+            <p class="back_ground"><strong>Example:</strong></p>
+            <pre class="pre-lib-c">
+<span class="purple">#include</span> <span class="orange">&lt;stdio.h&gt;</span>
+<span class="purple">#include</span> <span class="orange">&lt;bilson.h&gt;</span>
+
+<span class="blue">int</span> <span class="orange">main()</span>{
+
+    <span class="blue">int</span> sec1 = 5000;  <span class="green">// The total number of seconds to convert (5000 seconds in this case).</span>
+    <span class="blue">int</span> hour,  min, sec2; <span class="green">// Variables to store the hours, minutes, and remaining seconds.</span>
+
+    <span class="green"> // Call the 'time' function to convert 'sec1' into hours, minutes, and seconds.</span>
+    <span class="green">// 'sec1' is the input total seconds, the result will be stored in hour, min, and sec2.</span>
+    <span class="orange">time</span>(sec1, &hour, &minute, &sec2);
+
+    <span class="green">// Print the converted time in hours, minutes, and seconds</span>
+    <span class="orange">printf</span>("it's : %d hour %d min %d sec", hour, minute, sec2); <span class="green">// Display the result.</span>
+
+    <span class="orange">return</span> 0;
+}
+            </pre>
+            <p class="back_ground"><strong>Output</strong></p>
+            <pre class="pre-lib-c">
+it's : 1 hour 23 min 20 sec
+            </pre>
+
+            <h3>pairodd</h3>
+            <p>The pairodd function is designed to determine whether a given integer is even or odd. This function takes an integer
+                as input and returns a boolean value (1 for true, 0 for false) indicating whether the number is even.
+            </p>
+            <br>
+            <p class="back_ground"><strong>Example:</strong></p>
+            <pre class="pre-lib-c">
+<span class="purple">#include</span> <span class="orange">&lt;stdio.h&gt;</span>
+<span class="purple">#include</span> <span class="orange">&lt;bilson.h&gt;</span>
+
+<span class="blue">int</span> <span class="orange">main()</span>{
+
+    <span class="blue">int</span> number = 23; <span class="green">// Declare an integer variable with the value 23.</span>
+
+    <span class="green">// Call the 'pairodd' function to check if the number is even or odd.</span>
+    <span class="purple">if</span> (<span class="orange">pairodd</span>(number))
+    {
+        <span class="green">// If 'pairodd' returns true (even number), print that the number is even.</span>
+        <span class="orange">printf</span>("%d is even", number);
+    }<span class="purple">else</span>{
+        <span class="green">// If 'pairodd' returns false (odd number), print that the number is odd.</span>
+        <span class="orange">printf</span>("%d is odd", number);
+    }
+                
+    <span class="orange">return</span> 0;  
+}
+            </pre>
+            <p class="back_ground"><strong>Output</strong></p>
+            <pre class="pre-lib-c">
+23 is odd
+            </pre>
+
+            <h3> uplow</h3>
+            <p>
+                he uplow function is designed to check if a given character is an uppercase letter and, if so, convert it to lowercase.
+                If the character is not an uppercase letter, the function returns the character unchanged.
+            </p>
+            <br>
+            <p class="back_ground"><strong>Example:</strong></p>
+            <pre class="pre-lib-c">
+<span class="purple">#include</span> <span class="orange">&lt;stdio.h&gt;</span>
+<span class="purple">#include</span> <span class="orange">&lt;bilson.h&gt;</span>
+
+<span class="blue">int</span> <span class="orange">main()</span> {
+
+<span class="blue">char</span> character = 'A'; <span class="green">// Declare a character variable and assign it 'A' (uppercase).</span>
+
+
+    <span class="green">// Convert the character using the 'uplow' function (assumed to toggle case).</span>
+    <span class="green">// Convert the character if it is an uppercase letter</span>
+    <span class="blue">char</span> result = <span class="orange">uplow</span>(character);
+                
+    <span class="green">// Display the result</span>
+    <span class="orange">printf</span>("The converted character is: %c\n", result); 
+                
+    <span class="orange">return</span> 0;
+}
+            </pre>
+            <p class="back_ground"><strong>Output</strong></p>
+            <pre class="pre-lib-c">
+The converted character is: a
+            </pre>
+
+            <h3>fact</h3>
+            <p>The fact function is designed to calculate the factorial of a given non-negative integer. The factorial of a number n (denoted as n!) 
+                is the product of all positive integers less than or equal to n.
+            </p>
+            <br>
+            <p class="back_ground"><strong>Example:</strong></p>
+            <pre class="pre-lib-c">
+<span class="purple">#include</span> <span class="orange">&lt;stdio.h&gt;</span>
+<span class="purple">#include</span> <span class="orange">&lt;bilson.h&gt;</span>
+
+<span class="blue">int</span> main() {
+
+    <span class="blue">int</span> number = 7; <span class="green">// Declare an integer variable with the value 7 (example number).</span>
+                
+    <span class="green">// Calculate the factorial of the number using the 'fact' function.</span>
+    <span class="blue">int</span> result = <span class="orange">fact</span>(number); <span class="green">// 'fact' function calculates the factorial of 'number'.</span>
+                
+    <span class="green">// Display the result of the factorial Calculating.</span>
+    <span class="orange">printf</span>("The factorial of %d is: %d\n", number, result);
+                
+    <span class="orange">return</span> 0;
+}
+            </pre>
+            <p class="back_ground"><strong>Output</strong></p>
+            <pre class="pre-lib-c">
+The factorial of 7 is: 5040
+            </pre>
+
+            <h3>eqnd</h3>
+            <p>The eqnd function is designed to solve a quadratic equation of the form <span class="italic-eqnd">ax<sup>2</sup> + bx + c = 0</span>
+                . It calculates the discriminant and the real roots of the equation, if they exist.
+            </p>
+            <br>
+            <p class="back_ground"><strong>Example:</strong></p>
+            <pre class="pre-lib-c">
+<span class="purple">#include</span> <span class="orange">&lt;stdio.h&gt;</span>
+<span class="purple">#include</span> <span class="orange">&lt;bilson.h&gt;</span>
+
+<span class="blue">int</span> <span class="orange">main()</span> {
+
+    <span class="blue">float</span> a = 1, b = -3, c = 2; <span class="green">// Example coefficients for the quadratic equation (ax^2 + bx + c = 0).</span>
+    <span class="blue">float</span> delta, racine1, racine2; <span class="green">// Variables to store the discriminant and the roots.</span>
+                
+    <span class="green">// Solve the quadratic equation (find discriminant and roots) using the 'eqnd' function.</span>
+    <span class="orange">eqnd</span>(a, b, c, &delta, &racine1, &racine2);<span class="green">//'eqnd' calculates delta and the roots (racine1, racine2).</span>
+                
+    <span class="green">// Display the discriminant value.</span>
+    <span class="orange">printf</span>("Discriminant: %f\n", delta);
+
+    <span class="green"> // Check the discriminant to determine the nature of the roots.</span>
+    <span class="purple">if</span> (delta < 0) {
+        <span class="green">// If the discriminant is negative, there are no real roots.</span>
+        <span class="orange">printf</span>("No real roots.\n");
+    }<span class="purple">else if</span> (delta == 0) {
+        <span class="green">// If the discriminant is zero, there is one real double root.</span>
+        <span class="orange">printf</span>("One real double root: %g\n", racine1);
+    }<span class="purple">else</span> {
+        <span class="green">// If the discriminant is positive, there are two distinct real roots.</span>
+        <span class="orange">printf</span>("Two distinct real roots: %g and %g\n", racine1, racine2);
+    }
+                
+    <span class="orange">return</span> 0;
+}
+            </pre>
+            <p class="back_ground"><strong>Output</strong></p>
+            <pre class="pre-lib-c">
+Discriminant: 1
+Two distinct real roots: 2 and 1
+</pre>
+
+        <h3>disval, findmax, ocu</h3>
+            <p>Your code contains three functions: one to input values into an array, one to find the maximum value in the array,
+                and one to count the occurrences of this maximum value.
+            </p>
+            <br>
+            <p class="back_ground"><strong>Example:</strong></p>
+            <pre class="pre-lib-c">
+<span class="purple">#include</span> <span class="orange">&lt;stdio.h&gt;</span>
+<span class="purple">#include</span> <span class="orange">&lt;bilson.h&gt;</span>
+
+<span class="blue">int</span> <span class="orange">main()</span> {
+
+    <span class="blue">int</span> tailletab = 5; <span class="green">// Example size of the array (5 elements).</span>
+    <span class="blue">int</span> tab[tailletab]; <span class="green">// Declare an array with 'tailletab' elements</span>
+                
+    <span class="green">// / Input values into the array using the 'disval' function</span>
+    <span class="orange">disval</span>(tab, tailletab); <span class="green">// 'disval' takes user input and stores values in 'tab'.</span>
+                
+    <span class="green">// Find the maximum value in the array using the 'findmax' function.</span>
+    <span class="blue">int</span> max = <span class="orange">findmax</span>(tab, tailletab); <span class="green">// 'findmax' returns the maximum value in 'tab'.</span>
+                
+    <span class="green"> // Count the number of occurrences of the maximum value using the 'ocu' function.</span>
+    <span class="blue">int</span> occurrences = <span class="orange">ocu</span>(tab, tailletab, max);
+                
+    <span class="green">// Display the results</span>
+    <span class="orange">printf</span>("The maximum value is: %d\n", max);
+    <span class="orange">printf</span>("The maximum value occurs %d times.\n", occurrences);
+                
+    <span class="orange">return</span> 0;
+}
+            </pre>
+            <p class="back_ground"><strong>Output</strong></p>
+            <pre class="pre-lib-c">
+Please enter the number 1:
+3
+Please enter the number 2:
+5
+Please enter the number 3:
+5
+Please enter the number 4:
+2
+Please enter the number 5:
+5
+The maximum value is: 5
+The maximum value occurs 3 times.
+            </pre>
+
+            <h3>disoc</h3>
+            <p>The disoc function allows the user to input 10 integers, finds the maximum value among these integers, 
+                counts the number of occurrences of this maximum value, and displays these results.
+            </p>
+            <br>
+            <p class="back_ground"><strong>Example:</strong></p>
+            <pre class="pre-lib-c">
+<span class="purple">#include</span> <span class="orange">&lt;stdio.h&gt;</span>
+<span class="purple">#include</span> <span class="orange">&lt;bilson.h&gt;</span> 
+
+<span class="blue">int</span> <span class="orange">main()</span> {
+                    
+<span class="green"> // Call the 'disoc' function to perform the input, processing, and output logic.</span>
+    <span class="orange">disoc()</span>;
+<span class="green"> // Executes the function that handles input, finding the highest note, counting its occurrences, and displaying the result.</span>
+
+    <span class="orange">return</span> 0;
+}
+            </pre>
+            <p class="back_ground"><strong>Output</strong></p>
+            <pre class="pre-lib-c">
+Please enter 10 integers:
+Integer 1: 3
+Integer 2: 5
+Integer 3: 5
+Integer 4: 2
+Integer 5: 5
+Integer 6: 1
+Integer 7: 4
+Integer 8: 5
+Integer 9: 6
+Integer 10: 7
+The highest score is: 7
+The number of occurrences of the highest score is: 1
+            </pre>
+
+            <h3>disfunc, resmax, resmin</h3>
+            <p>The functions disfunc, resmax, and resmin are used to manipulate an array of integers. 
+                The disfunc function allows the user to input values into an array. The resmax function finds the maximum value in the array,
+                while the resmin function finds the minimum value.
+                These functions are useful for analyzing and processing numerical data stored in an array.
+            </p>
+            <br>
+            <p class="back_ground"><strong>Example:</strong></p>
+            <pre class="pre-lib-c">
+<span class="purple">#include</span> <span class="orange">&lt;stdio.h&gt;</span>
+<span class="purple">#include</span> <span class="orange">&lt;bilson.h&gt;</span>
+
+<span class="blue">int</span> <span class="orange">main()</span> {
+
+    <span class="blue">int</span> size = 5; <span class="green">// Define the size of the array.</span>
+    <span class="blue">int</span> tab[size]; <span class="green">// Declare an integer array 'tab' with the size defined by 'size'.</span>
+                
+    <span class="green">/ Call the function 'disfunc' to fill the array 'tab' with values entered by the user.</span>
+    <span class="orange">disfunc</span>(tab, taille); 
+
+    <span class="green">// Call the function 'resmax' to find and return the maximum value in the array 'tab'.</span>
+    <span class="blue">int</span> max = <span class="orange">resmax</span>(tab, taille);
+
+    <span class="green">// Call the function 'resmin' to find and return the minimum value in the array 'tab'.</span>
+    <span class="blue">int</span> min = <span class="orange">resmin</span>(tab, taille);
+                    
+    <span class="green"> // Display the maximum and minimum values found in the array</span>
+    <span class="orange">printf</span>("The maximum value is: %d\n", max);
+    <span class="orange">printf</span>("The minimum value is: %d\n", min);
+                
+    <span class="orange">return</span> 0;
+}
+            </pre>
+            <p class="back_ground"><strong>Output</strong></p>
+            <pre class="pre-lib-c">
+Please enter the number 1:
+3
+Please enter the number 2:
+5
+Please enter the number 3:
+1
+Please enter the number 4:
+2
+Please enter the number 5:
+4
+The maximum value is: 5
+The minimum value is: 1
+
+            </pre>
+
+            <h3>srtas</h3>
+            <p>The srtas function sorts an array of integers in ascending order using a simple bubble sort algorithm and then prints the sorted array.
+            </p>
+            <br>
+            <p class="back_ground"><strong>Example:</strong></p>
+            <pre class="pre-lib-c">
+<span class="purple">#include</span> <span class="orange">&lt;stdio.h&gt;</span>
+<span class="purple">#include</span> <span class="orange">&lt;bilson.h&gt;</span>
+
+<span class="blue">int</span> <span class="orange">main()</span> {
+    <span class="blue">int</span> size = 5; <span class="green">// Define the size of the array.</span>
+    <span class="blue">int</span> tab[size] = {5, 3, 4, 1, 2}; <span class="green">// Initialize the array 'tab' with values.</span>
+                
+    <span class="green">// Call the 'srtas' function to sort the array 'tab' in ascending order and print the sorted result.</span>
+    <span class="orange">srtas</span>(tab, size);
+                
+    <span class="orange">return</span> 0;
+}
+            </pre>
+            <p class="back_ground"><strong>Output</strong></p>
+            <pre class="pre-lib-c">
+[1, 2, 3, 4, 5]
+            </pre>
+
+            <h3>srtdes</h3>
+            <p>The srtdes function sorts an array of integers in descending order using a simple bubble sort algorithm and then prints the sorted array.</p>
+            <br>
+            <p class="back_ground"><strong>Example:</strong></p>
+            <pre class="pre-lib-c">
+<span class="purple">#include</span> <span class="orange">&lt;stdio.h&gt;</span>
+<span class="purple">#include</span> <span class="orange">&lt;bilson.h&gt;</span>
+
+<span class="blue">int</span> <span class="orange">main()</span> {
+    <span class="blue">int</span> size = 5;  <span class="green">// Define the size of the array.</span>
+    <span class="blue">int</span> tab[size] = {5, 3, 4, 1, 2}; <span class="green">// Initialize the array 'tab' with values.</span>
+                
+    <span class="green">// Call the 'srtas' function to sort the array 'tab' in descending order and print the sorted result.</span>
+    <span class="orange">srtdes</span>(tab, size);
+                
+    <span class="orange">return</span> 0;
+}
+            </pre>
+            <p class="back_ground"><strong>Output</strong></p>
+            <pre class="pre-lib-c">
+[5, 4, 3, 2, 1]
+            </pre>
+        </div>
+    </div>
+    </main>
+
+    <footer>  <!--footer-->
+        <div class="container-footer">
+            <div class="global-foot">
+                <h3 class="footer-title">Bilson.h</h3>
+                <ul>
+                    <li><a class="foot-link" href="#">Practice C with more style and fun</a></li>
+                </ul>
+            </div>
+            <div class="global-foot">
+                <h3 class="footer-title">Explore</h3>
+                <ul >
+                    <li><a  class="foot-link" href="../homepage.html">Homepage</a></li>
+                    <li><a class="foot-link"  href="fetch.html">Fetch</a></li>
+                    <li><a class="foot-link"  href="how-to.html">How-To</a></li>
+                </ul>
+            </div>
+            <div class="global-foot">
+                <h3 class="footer-title">Follow</h3>
+                <ul>
+                    <li><a class="foot-link" href="#">Instagram</a></li>
+                    <li><a class="foot-link" href="#">Facebook</a></li>
+                    <li><a class="foot-link" href="#">Linkedin</a></li>
+                    <li><a class="foot-link" href="#">Github</a></li>
+                </ul>
+            </div>
+            <div class="global-foot">
+                <h3 class="footer-title">Contact Us</h3>
+                <ul>
+                <li><a class="foot-link" href="#">Whatsaap</a></li>
+                <li><a class="foot-link" href="#">Help Support</a></li>
+            </ul>
+            </div>
+            <div class="global-foot">
+                <h3 class="footer-title">Legal</h3>
+                <ul>
+                    <li><a class="foot-link" href="#">Terms</a></li>
+                    <li><a class="foot-link" href="#">Privacy</a></li>
+                </ul>
+            </div>
+            <div class="global-foot">
+                <h3 class="footer-title">Sign up to our newsletter to stay on trend:</h3>
+                <form action="" method="post">
+                    <input class="mail" type="e-mail" name="email" id="email" placeholder="Your e-mail adress">
+                    <input class="button-input" type="submit" value="Sign up">
+                </form>
+            </div>
+        </div>
+    </footer>
+    <div class="footer-div">
+        <p>Copyright ©2024. Designed by Emmanuel Bilson. All Rights Reserved.</p>
+    </div>
+    <script src="../js/script.js"></script>
+</body>
+
+</html>
+</body>
+</html>

@@ -1,0 +1,130 @@
+.fetch{
+    display: flex;
+    justify-content: space-between;
+    gap: 4em;
+    width: 100%;
+}
+
+.video{
+    width: 45%;
+}
+.video iframe{
+    border-radius: 0.7rem;
+    width: 90%;
+    margin: 4rem 0 -6rem 5rem;
+}
+.fetch-download{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 35%;
+    height:fit-content;
+    padding:  1rem;
+    border-radius: 8px;
+    box-shadow: 0 5px 20px rgba(0, 0, 0, 0.25);
+    margin: 4rem 10rem 3rem 0;
+}
+
+
+.size{
+    font-size: 4em;
+    font-weight: bold;
+    margin-bottom: 0.20em;
+    line-height: 1;
+}
+
+.byte{
+    font-size: 0.5em;
+    font-weight: bold;
+    vertical-align: middle;
+}
+
+.rating{
+    display: flex;
+    align-items: center;
+}
+
+.score{
+    color: var(--orange);
+    font-family: var(--inter);
+    margin-right: 4px;
+}
+
+.star{
+    font-size: 1.5rem;
+    color: var(--gray);
+    margin-top: -4px;
+    transition: 0.3s;
+    cursor: pointer;
+}
+
+.star:hover{
+    color: var(--etoile);
+}
+
+.download-file{
+    background-color: var(--black);
+    color: var(--secondary-color);
+    padding: 1em 2em;
+    border-radius: 5px;
+    margin-top: 10px;
+    transition: transform 0.3s ease;
+    cursor: pointer;
+}
+
+.download-file:hover{
+    opacity: 0.92;
+    transform: scale(1.03);
+}
+
+.download-file a{
+    color: var(--secondary-color);
+    text-decoration: none;
+    font-family: var(--inter);
+}
+
+.Version-History{
+    display: flex;
+    align-items: center;
+    margin-top: 12px;
+    cursor: pointer;
+}
+
+.rigth{
+    display: flex;
+    justify-content: flex-end;
+    overflow-x: auto;
+}
+
+.info-installation{
+    background-color: var(--opacity);
+    overflow: auto;
+    padding: 35px;
+    height: fit-content;
+
+    
+    font-family: var(--inter);
+
+    border-radius: 5px;
+    width: 35%;
+    margin-right: 10rem;
+}
+
+.info-installation ul{
+    list-style-type: square;
+}
+
+.info-installation ul li::marker{
+    color: var(--primary-color);
+}
+
+.info-installation a{
+    display: inline-block;
+    color: var(--primary-color);
+    font-weight: 700;
+    transition: transform 0.3s ease;
+}
+
+.info-installation a:hover{
+    transform: scale(1.1);
+}

@@ -1,0 +1,92 @@
+.container-footer{
+    display: flex;
+    justify-content: space-between;
+    gap: 2em;
+    flex-wrap: nowrap;
+    width: 100%;
+    background-color: var(--primary-color);
+    opacity: 0.9;
+    font-family: var(--inter);
+    padding: 5%;
+    margin-top: 90px;
+}
+
+.footer-title{
+    color: var(--secondary-color);
+    margin-bottom: 10px;
+    font-weight: bold;
+}
+
+
+.global-foot{
+    width: 15%;
+}
+
+.global-foot ul li{
+    list-style: none;
+}
+
+.global-foot li{
+    margin-bottom: 5px;
+}
+
+.foot-link{
+    text-decoration: none;
+    color: var(--opacity);
+    font-weight: 400;
+    font-size: 1em;
+}
+
+.foot-link:hover{
+    color: var(--orange);
+    transition: 0.3s;
+}
+
+.mail{
+    padding: 1rem;
+    width: 110%;
+    border-radius: 7px;
+    border: 1px solid var(--primary-color);
+}
+
+input::-webkit-input-placeholder{
+    font-size: 1em;
+}
+
+.button-input{
+    padding: 6%;
+    margin-top: 5px;
+    background-color: var(--black) ;
+    color: var(--secondary-color);
+    
+    border-radius: 10px;
+    border-color: var(--primary-color);
+    width: 70%;
+
+    transition: transform 0.3s ease;
+    cursor: pointer;
+}
+
+.button-input[value]{
+    font-family: var(--inter);
+    font-size: 1rem;
+}
+
+.button-input[value]:hover{
+    color: var(--orange);
+}
+
+.button-input:hover{
+    transform: scale(1.1);
+    opacity: 0.9;
+}
+
+.footer-div{
+    background-color: var(--footer-color);
+    color: var(--opacity);
+    font-family: var(--inter);
+    font-weight: 500;
+
+    text-align: center;
+    padding: 25px;
+}
