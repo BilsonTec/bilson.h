@@ -1,0 +1,218 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="shortcut icon" href="public/image-removebg-preview.png" type="image-icon">
+    <title>Bilson.h</title>
+
+<body>
+    <header> <!--navbar-->
+        <nav class="header__nav">
+            <div class="header__logo">Mylib.<span>C</span></div>
+            <h2 class="include">#Include <span class="animated-text">&lt;bilson.h&gt;</span>
+            </h2>
+            <div class="header__menu">
+                <ul>
+                    <li><a href="homepage.html">Homepage</a></li>
+                    <li><a href="html/fetch.html">Fetch</a></li>
+                    <li><a href="html/how-to.html">How-To</a></li>
+                </ul>
+            </div>
+            <div class="header__menu-mobile">
+                <img src="assets/menu.svg" alt="menu mobile">
+            </div>
+        </nav>
+        <div class="burger-menu">
+            <ul>
+                <li><a href="homepage.html">Homepage</a></li>
+                <li><a href="html/fetch.html">Fetch</a></li>
+                <li><a href="html/how-to.html">How-To</a></li>
+            </ul>
+        </div>
+    </header> <!--navbar-->
+
+    <main> <!--table of function and their description-->
+        <div class="library">
+            <div class="table">
+                <table class="table-function">
+                    <thead>
+                        <tr>
+                            <th class="border">FUNCTIONS</th>
+                            <th class="border">DESCRIPTION</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+
+                        <tr>
+                            <td class="border" valign="middle">avecal</td>
+                            <td class="border">The avecal function is designed to calculate the average of multiple grades.
+                                <pre class="pre">avecal(note[],number_note);</pre>
+                            </td>
+                        </tr>
+
+                        <tr>
+                            <td class="border" valign="middle">time</td>
+                            <td class="border">Convert entered time into seconds in hour, minute and second.
+                                <pre class="pre">time(sec_1, &heure, &minute);</pre>
+                            </td>
+                        </tr>
+
+                        <tr>
+                            <td class="border" valign="middle">pairood</td>
+                            <td class="border">Check if a number is even or odd.
+                                <pre class="pre">pairood(number);</pre>
+                            </td>
+                        </tr>
+
+                        <tr>
+                            <td class="border" valign="middle">uplow</td>
+                            <td class="border">Convert a lowercase character into uppercase.
+                                <pre class="pre">uplow(crt);</pre>
+                            </td>
+                        </tr>
+
+                        <tr>
+                            <td class="border" valign="middle">fact</td>
+                            <td class="border">Calculates the factorial of a number.
+                                <pre class="pre">fact(number);</pre>
+                            </td>
+                        </tr>
+
+                        <tr>
+                            <td class="border" valign="middle">eqnd</td>
+                            <td class="border">Resolve a quadratin equation.
+                                <pre class="pre">eqnd(A, B, C, &delta, &racine_1, &racine_2);</pre>
+                            </td>
+                        </tr>
+
+                        <tr>
+                            <td class="border" valign="middle">disval, findmax, <br>ocu</td>
+                            <td class="border">Find the number of occurrences of the highest note.
+                                <pre class="pre">disval(tab, sizetab);
+findmax(tab, sizetab);
+ocu(tab, sizetab, max);
+                                                
+                                </pre>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td class="border" valign="middle">disoc</td>
+                            <td class="border">Input 10 integers, find the highest score, and count its occurrences.
+                                <pre class="pre">disoc();</pre>
+                            </td>
+                        </tr>
+
+                        <tr>
+                            <td class="border" valign="middle">disfunc, resmax, <br>resmin</td>
+                            <td class="border">Find the maximum and minimum in an array.
+                                <pre class="pre">disfunc(tab, sizetab);
+resmax(tab, sizetab); 
+resmin(tab, sizetab);
+                                                
+                                </pre>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td class="border" valign="middle">srtas</td>
+                            <td class="border">Sort an array in ascending order and print the sorted array.
+                                <pre class="pre">srtas(tab, sizetab);</pre>
+                            </td>
+                        </tr>
+
+                        <tr>
+                            <td class="border" valign="middle">srtdes</td>
+                            <td class="border">Sort an array in descending order and print the sorted array.
+                                <pre class="pre">srtdes(tab, sizetab);</pre>
+                            </td>
+                        </tr>
+                    </tbody>
+                </table> <!--table of function and their description-->
+
+            </div> <!--information additional-->
+            <div class="aside-add">
+                <div class="container-icon">
+                    <img class="icon-info" src="public/help_clinic_16dp_000000_FILL0_wght400_GRAD0_opsz20.png" alt="info" width="40">
+                    <h3 class="text-info">Supplementary information</h3>
+                </div>
+                <ul>
+                    <br>
+                    <li>the <strong>time</strong> function you provided converts a number of seconds into hours,<br>
+                        minutes, and seconds using pointers to return the values.</li>
+                    <br>
+
+                    <li>The function you provided, <strong>pairodd</strong>, checks whether a given number <br>
+                        is even or odd. <br>
+                        It returns 1 (true) if the number is even and 0 (false) if the number is odd.</li>
+                    <br>
+
+                    <li>The function you provided,<strong> uplow </strong>, checks if a given character is an uppercase
+                        letter. <br>
+                        If it is, the function converts it to a lowercase letter. <br>
+                        If the character is not an uppercase letter, the function returns the character unchanged. </li>
+                </ul>
+                <br>
+                <p>For more information on using the functions in the library, <a href="/html/how-to.html">click here</a>.</p>
+            </div>
+        </div>
+    </main>
+
+    <footer>  <!--footer-->
+        <div class="container-footer">
+            <div class="global-foot">
+                <h3 class="footer-title">Bilson.h</h3>
+                <ul>
+                    <li><a class="foot-link" href="#">Practice C with more style and fun</a></li>
+                </ul>
+            </div>
+            <div class="global-foot">
+                <h3 class="footer-title">Explore</h3>
+                <ul >
+                    <li><a  class="foot-link" href="homepage.html">Homepage</a></li>
+                    <li><a class="foot-link"  href="/html/fetch.html">Fetch</a></li>
+                    <li><a class="foot-link"  href="/html/how-to.html">How-To</a></li>
+                </ul>
+            </div>
+            <div class="global-foot">
+                <h3 class="footer-title">Follow</h3>
+                <ul>
+                    <li><a class="foot-link" href="#">Instagram</a></li>
+                    <li><a class="foot-link" href="#">Facebook</a></li>
+                    <li><a class="foot-link" href="#">Linkedin</a></li>
+                    <li><a class="foot-link" href="#">Github</a></li>
+                </ul>
+            </div>
+            <div class="global-foot">
+                <h3 class="footer-title">Contact Us</h3>
+                <ul>
+                <li><a class="foot-link" href="#">Whatsaap</a></li>
+                <li><a class="foot-link" href="#">Help Support</a></li>
+            </ul>
+            </div>
+            <div class="global-foot">
+                <h3 class="footer-title">Legal</h3>
+                <ul>
+                    <li><a class="foot-link" href="#">Terms</a></li>
+                    <li><a class="foot-link" href="#">Privacy</a></li>
+                </ul>
+            </div>
+            <div class="global-foot">
+                <h3 class="footer-title">Sign up to our newsletter to stay on trend:</h3>
+                <form action="" method="post">
+                    <input class="mail" type="e-mail" name="email" id="email" placeholder="Your e-mail adress">
+                    <input class="button-input" type="submit" value="Sign up">
+                </form>
+            </div>
+        </div>
+    </footer>
+    <div class="footer-div">
+        <p>Copyright ©2024. Designed by Emmanuel Bilson. All Rights Reserved.</p>
+    </div>
+
+    <script src="js/script.js"></script>
+</body>
+
+
+</html>
